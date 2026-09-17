@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/series.schema.json",
+  "title": "Accessible learning visual series",
+  "type": "object",
+  "required": ["id", "name", "identity", "audience", "educational_purpose", "language", "design_system", "policies", "canva", "visuals", "locked_decisions"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string" },
+    "identity": {
+      "type": "object",
+      "required": ["voice", "visual_character"],
+      "properties": {
+        "voice": { "type": "string" },
+        "visual_character": { "type": "string" }
+      }
+    },
+    "audience": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "educational_purpose": { "type": "string", "minLength": 1 },
+    "language": {
+      "type": "object",
+      "required": ["primary", "technical_labels"],
+      "properties": {
+        "primary": { "const": "es" },
+        "technical_labels": { "const": "en-short" }
+      }
+    },
+    "design_system": {
+      "type": "object",
+      "required": ["tokens", "layout_families"],
+      "properties": {
+        "tokens": { "type": "string" },
+        "layout_families": { "type": "array", "minItems": 5, "items": { "type": "string" } }
+      }
+    },
+    "policies": { "type": "object" },
+    "canva": {
+      "type": "object",
+      "required": ["tier", "brand_kit_status", "template_status"],
+      "properties": {
+        "tier": { "enum": ["Pro", "Teams"] },
+        "brand_kit_status": { "type": "string" },
+        "template_status": { "type": "string" },
+        "public_template_url": { "type": ["string", "null"], "format": "uri" },
+        "public_view_url": { "type": ["string", "null"], "format": "uri" }
+      }
+    },
+    "visuals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "manifest", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "manifest": { "type": "string" },
+          "status": { "enum": ["draft", "reviewed", "accessible", "published"] }
+        }
+      }
+    },
+    "locked_decisions": { "type": "array", "items": { "type": "object" } }
+  },
+  "additionalProperties": false
+}

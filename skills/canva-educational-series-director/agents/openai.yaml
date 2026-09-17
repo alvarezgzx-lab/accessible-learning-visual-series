@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canva Educational Series Director"
+  short_description: "Coordinates evidence, Canva, web companions, and accessibility."
+  default_prompt: "Use $canva-educational-series-director to turn this brief into a synchronized, accessible educational visual series."

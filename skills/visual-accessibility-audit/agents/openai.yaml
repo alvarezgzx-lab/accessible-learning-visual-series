@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Accessibility Audit"
+  short_description: "Audits Canva, PDF, and web outputs against accessibility rules."
+  default_prompt: "Use $visual-accessibility-audit to test this visual and companion before publication."

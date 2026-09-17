@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compañero accesible del gráfico From Performance to Evidence.">
+  <title>From Performance to Evidence · Accessible Learning Visual Series</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <p class="brand"><a href="index.html">Accessible Learning Visual Series</a></p>
+  </header>
+  <nav class="view-nav" aria-label="Vistas del gráfico">
+    <a data-view-link href="#overview">Overview</a>
+    <a data-view-link href="#frameworks">Frameworks</a>
+    <a data-view-link href="#technology">Technology</a>
+    <a data-view-link href="#evidence">Evidence</a>
+  </nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="visual-title">
+      <p class="eyebrow">Publication 1 · Traceability</p>
+      <h1 id="visual-title">FROM PERFORMANCE TO EVIDENCE</h1>
+      <p class="subtitle">THE HUMAN-CENTRED DIGITAL LEARNING LOOP</p>
+      <p class="lead">Este recorrido ayuda a decidir qué diseñar, qué observar y qué puede —o no puede— inferirse de los datos.</p>
+      <p class="boundary"><strong>Límite de evidencia:</strong> el loop es una síntesis de diseño para esta serie. No ha sido validado como modelo universal ni demuestra por sí mismo eficacia, transferencia o ahorro.</p>
+    </section>
+
+    <section id="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <p>Activa cada nodo o navega directamente a sus detalles. El orden también se presenta como lista debajo del diagrama.</p>
+      <div class="flow-shell">
+        <svg viewBox="0 0 900 590" role="img" aria-labelledby="svg-title svg-desc">
+          <title id="svg-title">Loop de desempeño a evidencia</title>
+          <desc id="svg-desc">Seis nodos conectados en sentido horario: desempeño, evidencia, práctica, experiencia, eventos e interpretación.</desc>
+          <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3e7568"/></marker></defs>
+          <path class="svg-arrow" d="M285 110 H600"/><path class="svg-arrow" d="M710 165 V275"/><path class="svg-arrow" d="M610 355 H300"/><path class="svg-arrow" d="M190 410 V500"/><path class="svg-arrow" d="M285 530 H600"/><path class="svg-arrow" d="M710 490 C820 390 820 165 720 105"/>
+          <a class="svg-link" href="#performance" aria-label="Paso 1: Target Performance"><rect class="svg-node" x="80" y="50" rx="18" width="220" height="115"/><circle class="svg-node-accent" cx="115" cy="85" r="22"/><text class="svg-number" x="108" y="94">1</text><text class="svg-label" x="145" y="92">TARGET</text><text class="svg-label" x="145" y="116">PERFORMANCE</text></a>
+          <a class="svg-link" href="#evidence-stage" aria-label="Paso 2: Evidence and Criteria"><rect class="svg-node" x="600" y="50" rx="18" width="220" height="115"/><circle class="svg-node-accent" cx="635" cy="85" r="22"/><text class="svg-number" x="628" y="94">2</text><text class="svg-label" x="665" y="92">EVIDENCE</text><text class="svg-label" x="665" y="116">&amp; CRITERIA</text></a>
+          <a class="svg-link" href="#practice" aria-label="Paso 3: Authentic Practice"><rect class="svg-node" x="600" y="275" rx="18" width="220" height="115"/><circle class="svg-node-accent" cx="635" cy="310" r="22"/><text class="svg-number" x="628" y="319">3</text><text class="svg-label" x="665" y="317">AUTHENTIC</text><text class="svg-label" x="665" y="341">PRACTICE</text></a>
+          <a class="svg-link" href="#experience" aria-label="Paso 4: Human-Centred Experience"><rect class="svg-node" x="80" y="275" rx="18" width="220" height="115"/><circle class="svg-node-accent" cx="115" cy="310" r="22"/><text class="svg-number" x="108" y="319">4</text><text class="svg-label" x="145" y="317">HUMAN-CENTRED</text><text class="svg-label" x="145" y="341">EXPERIENCE</text></a>
+          <a class="svg-link" href="#events" aria-label="Paso 5: Meaningful Events"><rect class="svg-node" x="80" y="475" rx="18" width="220" height="100"/><circle class="svg-node-accent" cx="115" cy="510" r="22"/><text class="svg-number" x="108" y="519">5</text><text class="svg-label" x="145" y="516">MEANINGFUL</text><text class="svg-label" x="145" y="540">EVENTS</text></a>
+          <a class="svg-link" href="#interpretation" aria-label="Paso 6: Interpret, Transfer and Iterate"><rect class="svg-node" x="600" y="475" rx="18" width="220" height="100"/><circle class="svg-node-accent" cx="635" cy="510" r="22"/><text class="svg-number" x="628" y="519">6</text><text class="svg-label" x="665" y="516">INTERPRET,</text><text class="svg-label" x="665" y="540">TRANSFER &amp; ITERATE</text></a>
+        </svg>
+      </div>
+
+      <p><button class="cta" type="button" data-expand-all aria-pressed="false">Ampliar todos los pasos</button></p>
+      <div class="stage-grid" aria-label="Descripción de los seis pasos">
+        <details id="performance" data-stage><summary>1. Target Performance</summary><div><p class="question">¿Qué debe lograr la persona en contexto?</p><p class="output">Salida: desempeño contextualizado y observable.</p><span class="tag">Authentic assessment</span> <a class="source-marker" href="#source-s1">[S1]</a></div></details>
+        <details id="evidence-stage" data-stage><summary>2. Evidence &amp; Criteria</summary><div><p class="question">¿Qué producto, decisión o explicación observable respaldaría la afirmación?</p><p class="output">Salida: criterios y modelo explícito de evidencia.</p><span class="tag">Evidence-Centered Design</span> <a class="source-marker" href="#source-s2">[S2]</a></div></details>
+        <details id="practice" data-stage><summary>3. Authentic Practice</summary><div><p class="question">¿Qué práctica reproduce las decisiones y restricciones relevantes?</p><p class="output">Salida: tarea significativa, no interacción por sí misma.</p><span class="tag">Authentic assessment</span> <a class="source-marker" href="#source-s1">[S1]</a></div></details>
+        <details id="experience" data-stage><summary>4. Human-Centred Experience</summary><div><p class="question">¿Cómo comprender, controlar y usar la experiencia de forma accesible?</p><p class="output">Salida: interfaz inclusiva con participación pertinente de stakeholders.</p><span class="tag">HCLA</span> <span class="tag">UDL 3.0</span> <span class="tag">WCAG 2.2</span> <a class="source-marker" href="#source-s3">[S3]</a></div></details>
+        <details id="events" data-stage><summary>5. Meaningful Events</summary><div><p class="question">¿Qué acciones y estados vale la pena registrar y por qué?</p><p class="output">Salida: vocabulario pequeño de eventos ligado al modelo de evidencia.</p><span class="tag">Closed-loop LA</span> <a class="source-marker" href="#source-s5">[S5]</a></div></details>
+        <details id="interpretation" data-stage><summary>6. Interpret, Transfer &amp; Iterate</summary><div><p class="question">¿Qué respaldan los datos, qué no prueban y qué debe cambiar?</p><p class="output">Salida: interpretación acotada y decisión de diseño documentada.</p><span class="tag">Closed-loop LA</span> <span class="tag">HCLA</span> <a class="source-marker" href="#source-s5">[S5]</a></div></details>
+      </div>
+      <p class="closing">Technology makes the experience observable. L&amp;D defines what the evidence means.</p>
+    </section>
+
+    <section id="frameworks" aria-labelledby="frameworks-title">
+      <h2 id="frameworks-title">Frameworks</h2>
+      <div class="framework-grid">
+        <article class="card"><h3>Authentic assessment</h3><p>Ayuda a diseñar tareas, criterios y contextos con sentido, sin reducir autenticidad a imitar superficialmente el trabajo real.</p><a href="#source-s1">Ver evidencia S1</a></article>
+        <article class="card"><h3>Evidence-Centered Design</h3><p>Conecta lo que se afirma sobre una capacidad con la evidencia observable y las tareas capaces de producirla.</p><a href="#source-s2">Ver evidencia S2</a></article>
+        <article class="card"><h3>Human-centred learning analytics</h3><p>Incorpora necesidades, control, agencia y evaluación contextual de las personas afectadas por los sistemas.</p><a href="#source-s3">Ver evidencia S3–S4</a></article>
+        <article class="card"><h3>Closed-loop learning analytics</h3><p>Relaciona captura, análisis, intervención y revisión, con teoría educativa y límites de interpretación.</p><a href="#source-s5">Ver evidencia S5</a></article>
+      </div>
+    </section>
+
+    <section id="technology" aria-labelledby="technology-title">
+      <h2 id="technology-title">Technology</h2>
+      <p>La tecnología apoya el recorrido; no decide qué cuenta como buen desempeño.</p>
+      <div class="tech-grid">
+        <article class="card"><h3>IA asistida</h3><p>Ayuda a explorar, prototipar y revisar. Requiere criterio humano, verificación, seguridad y QA.</p></article>
+        <article class="card"><h3>UX/UI</h3><p>Hace comprensibles los estados, decisiones, criterios y consecuencias; también reduce barreras de uso.</p></article>
+        <article class="card"><h3>JavaScript / JSX</h3><p>Representa lógica, estados y retroalimentación cuando la experiencia necesita comportamiento personalizado.</p></article>
+        <article class="card"><h3>xAPI / eventos</h3><p>Estructura acciones observables con contexto. Un evento es un registro, no una conclusión sobre aprendizaje.</p></article>
+      </div>
+    </section>
+
+    <section id="evidence" aria-labelledby="evidence-title">
+      <h2 id="evidence-title">Evidence</h2>
+      <p>La tabla distingue evidencia, interpretación y decisiones del sistema.</p>
+      <div class="table-scroll" tabindex="0" aria-label="Tabla desplazable de afirmaciones y evidencia">
+        <table class="evidence-table">
+          <thead><tr><th>Afirmación</th><th>Límite</th><th>Fuentes</th></tr></thead>
+          <tbody>
+            <tr><td>La práctica auténtica exige tareas, criterios y contexto con sentido.</td><td>Supported</td><td><a href="#source-s1">S1</a></td></tr>
+            <tr><td>ECD conecta afirmaciones, evidencia observable y tareas.</td><td>Supported</td><td><a href="#source-s2">S2</a></td></tr>
+            <tr><td>LA/AI centradas en personas requieren agencia y participación contextual.</td><td>Supported</td><td><a href="#source-s3">S3</a>, <a href="#source-s4">S4</a></td></tr>
+            <tr><td>Los eventos requieren interpretación informada por teoría.</td><td>Supported</td><td><a href="#source-s5">S5</a></td></tr>
+            <tr><td>El loop de seis pasos es una síntesis útil para esta serie.</td><td>Design decision</td><td>S1–S5</td></tr>
+            <tr><td>El piloto mejora eficacia, transferencia o ahorro.</td><td>Needs validation</td><td>No demostrado</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Referencias</h3>
+      <ol>
+        <li id="source-s1">Zhan, Y., Boud, D. &amp; Du, Z. (2025). <a href="https://doi.org/10.1007/s10734-025-01588-9">Designing for authentic assessment: a scoping review</a>.</li>
+        <li id="source-s2">Gholson, M. L., Sova, L., Cogan Hauck, M., Howley, L. &amp; Albee, T. (2024). <a href="https://doi.org/10.1080/10627197.2024.2354297">Extending Principles of Evidence-Centered Design for Diverse Populations</a>.</li>
+        <li id="source-s3">Alfredo, R. et al. (2024). <a href="https://doi.org/10.1016/j.caeai.2024.100215">Human-centred learning analytics and AI in education: A systematic literature review</a>.</li>
+        <li id="source-s4">Buckingham Shum, S., Martínez-Maldonado, R., Dimitriadis, Y. &amp; Santos, P. (2024). <a href="https://doi.org/10.1111/bjet.13442">Human-Centred Learning Analytics: 2019–24</a>.</li>
+        <li id="source-s5">Sailer, M., Ninaus, M., Huber, S. E., Bauer, E. &amp; Greiff, S. (2024). <a href="https://doi.org/10.1016/j.chb.2024.108305">The End is the Beginning is the End: The closed-loop learning analytics framework</a>.</li>
+      </ol>
+
+      <h3>Descripción extensa</h3>
+      <p>El visual presenta seis etapas numeradas en un ciclo. Comienza definiendo el desempeño contextual, después especifica evidencia observable y criterios. Diseña una práctica auténtica para producir esa evidencia, conforma una experiencia accesible y centrada en las personas, registra únicamente eventos significativos e interpreta los datos dentro de límites explícitos. La última etapa devuelve decisiones a la definición inicial del desempeño.</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills de la serie</h2>
+      <ul>
+        <li><a href="skills/canva-educational-series-director/SKILL.md" download>Descargar skill orquestadora</a></li>
+        <li><a href="skills/visual-evidence-research/SKILL.md" download>Descargar investigación de evidencia</a></li>
+        <li><a href="skills/canva-accessible-visual/SKILL.md" download>Descargar diseño accesible en Canva</a></li>
+        <li><a href="skills/interactive-learning-graphic/SKILL.md" download>Descargar gráfico interactivo</a></li>
+        <li><a href="skills/visual-accessibility-audit/SKILL.md" download>Descargar auditoría de accesibilidad</a></li>
+      </ul>
+      <p class="muted">En GitHub Pages, estos enlaces apuntan a los archivos Markdown públicos del repositorio.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><strong>Estado:</strong> companion funcional; validación manual con NVDA y PDF accesible pendientes de la exportación final de Canva.</p>
+  </footer>
+</body>
+</html>

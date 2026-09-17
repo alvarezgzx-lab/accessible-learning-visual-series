@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/visual.schema.json",
+  "title": "Educational visual manifest",
+  "type": "object",
+  "required": ["id", "title", "subtitle", "language", "purpose", "main_message", "type", "blocks", "relationships", "reading_order", "canva_spec", "interactive", "accessibility", "claims", "sources", "skill_links", "status", "urls"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "subtitle": { "type": "string" },
+    "language": { "type": "string" },
+    "purpose": { "type": "string" },
+    "main_message": { "type": "string" },
+    "type": { "enum": ["flow", "map", "matrix", "modular-infographic", "carousel"] },
+    "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "question", "output", "frameworks", "evidence_markers"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "question": { "type": "string" },
+          "output": { "type": "string" },
+          "frameworks": { "type": "array", "items": { "type": "string" } },
+          "evidence_markers": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "relationships": { "type": "array", "items": { "type": "object", "required": ["from", "to", "label"] } },
+    "reading_order": { "type": "array", "items": { "type": "string" } },
+    "canva_spec": { "type": "object" },
+    "interactive": { "type": "object", "required": ["required", "views", "deep_links"] },
+    "accessibility": { "type": "object", "required": ["alt_text", "long_description", "text_equivalent"] },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "boundary", "source_ids"],
+        "properties": {
+          "id": { "type": "string" },
+          "statement": { "type": "string" },
+          "boundary": { "enum": ["supported", "interpretation", "design-decision", "needs-validation"] },
+          "source_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "authors", "year", "url", "type", "peer_reviewed", "supports_claims"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "authors": { "type": "array", "items": { "type": "string" } },
+          "year": { "type": "integer", "minimum": 1900 },
+          "doi": { "type": ["string", "null"] },
+          "url": { "type": "string", "format": "uri" },
+          "type": { "enum": ["peer-reviewed-article", "standard", "official-guidance"] },
+          "peer_reviewed": { "type": "boolean" },
+          "supports_claims": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "skill_links": { "type": "array", "items": { "type": "object", "required": ["name", "read_path", "download_path"] } },
+    "status": { "enum": ["draft", "reviewed", "accessible", "published"] },
+    "urls": {
+      "type": "object",
+      "required": ["canva_public", "companion_public"],
+      "properties": {
+        "canva_public": { "type": ["string", "null"], "format": "uri" },
+        "companion_public": { "type": ["string", "null"], "format": "uri" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

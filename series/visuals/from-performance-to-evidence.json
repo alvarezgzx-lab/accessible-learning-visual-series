@@ -1,0 +1,226 @@
+{
+  "$schema": "../../schemas/visual.schema.json",
+  "id": "from-performance-to-evidence",
+  "title": "FROM PERFORMANCE TO EVIDENCE",
+  "subtitle": "THE HUMAN-CENTRED DIGITAL LEARNING LOOP",
+  "language": "English visual labels with Spanish companion explanations",
+  "purpose": "Show how L&D can connect expected performance, evidence, authentic practice, human-centred experience, meaningful events and iterative interpretation before choosing technology.",
+  "main_message": "Technology makes the experience observable. L&D defines what the evidence means.",
+  "type": "flow",
+  "blocks": [
+    {
+      "id": "performance",
+      "label": "1. TARGET PERFORMANCE",
+      "question": "What should the person be able to accomplish in context?",
+      "output": "A contextualized, observable performance statement.",
+      "frameworks": ["Constructive alignment", "Authentic assessment"],
+      "evidence_markers": ["S1"]
+    },
+    {
+      "id": "evidence",
+      "label": "2. EVIDENCE & CRITERIA",
+      "question": "What observable product, decision or explanation would support the claim?",
+      "output": "Criteria and an explicit evidence model.",
+      "frameworks": ["Evidence-Centered Design"],
+      "evidence_markers": ["S2"]
+    },
+    {
+      "id": "practice",
+      "label": "3. AUTHENTIC PRACTICE",
+      "question": "What practice reproduces the decisions and constraints that matter?",
+      "output": "A meaningful task, not interaction for its own sake.",
+      "frameworks": ["Authentic assessment"],
+      "evidence_markers": ["S1"]
+    },
+    {
+      "id": "experience",
+      "label": "4. HUMAN-CENTRED EXPERIENCE",
+      "question": "How can people understand, control and use the experience accessibly?",
+      "output": "A usable, inclusive interface with relevant stakeholder input.",
+      "frameworks": ["Human-centred learning analytics", "UDL 3.0", "WCAG 2.2"],
+      "evidence_markers": ["S3", "S4", "S6", "S7"]
+    },
+    {
+      "id": "events",
+      "label": "5. MEANINGFUL EVENTS",
+      "question": "Which actions and states are worth recording, and why?",
+      "output": "A small event vocabulary tied to the evidence model.",
+      "frameworks": ["Closed-loop learning analytics"],
+      "evidence_markers": ["S5"]
+    },
+    {
+      "id": "interpretation",
+      "label": "6. INTERPRET, TRANSFER & ITERATE",
+      "question": "What can the data support, what can it not prove, and what should change?",
+      "output": "A bounded interpretation and a documented design decision.",
+      "frameworks": ["Closed-loop learning analytics", "Human-centred learning analytics"],
+      "evidence_markers": ["S3", "S5"]
+    }
+  ],
+  "relationships": [
+    { "from": "performance", "to": "evidence", "label": "define the claim before the measure" },
+    { "from": "evidence", "to": "practice", "label": "elicit the intended evidence" },
+    { "from": "practice", "to": "experience", "label": "make the task usable and inclusive" },
+    { "from": "experience", "to": "events", "label": "record only meaningful interactions" },
+    { "from": "events", "to": "interpretation", "label": "interpret within stated limits" },
+    { "from": "interpretation", "to": "performance", "label": "iterate the design and criteria" }
+  ],
+  "reading_order": ["performance", "evidence", "practice", "experience", "events", "interpretation"],
+  "canva_spec": {
+    "family": "flow-diagram",
+    "size_px": { "width": 1080, "height": 1350 },
+    "composition": "Header plus a 2-by-3 numbered card grid connected clockwise; synthesis band and companion invitation at the bottom.",
+    "visible_text": {
+      "header": "FROM PERFORMANCE TO EVIDENCE",
+      "subtitle": "THE HUMAN-CENTRED DIGITAL LEARNING LOOP",
+      "closing": "Technology makes the experience observable. L&D defines what the evidence means.",
+      "companion_cta": "Explore the frameworks, evidence and accessible text version"
+    },
+    "mobile_legibility": "Use no more than 30 words per card and 26 px minimum body text.",
+    "exports": ["PNG", "PDF Digital"],
+    "accessibility_check": "Required in Canva and externally after export."
+  },
+  "interactive": {
+    "required": true,
+    "views": ["Overview", "Frameworks", "Technology", "Evidence"],
+    "deep_links": ["#overview", "#frameworks", "#technology", "#evidence"],
+    "progressive_disclosure": "Each stage exposes its question, output, framework rationale and linked sources.",
+    "no_javascript_fallback": "All stage details and references remain in the document flow."
+  },
+  "accessibility": {
+    "alt_text": "Six-step loop from target performance to evidence, authentic practice, human-centred experience, meaningful events, and interpretation and iteration.",
+    "long_description": "The visual presents six numbered stages in a loop. It begins by defining contextual performance, then specifies observable evidence and criteria. It designs authentic practice to elicit that evidence, shapes an accessible human-centred experience, records only meaningful events, and interprets the resulting data within explicit limits. The final stage feeds decisions back into the performance definition. Framework and source markers connect each stage to recent peer-reviewed research and current accessibility guidance.",
+    "text_equivalent": "An ordered list and evidence table are included in the companion.",
+    "color_independence": "Numbers, headings and directional labels duplicate every color-coded relationship.",
+    "reading_order": "Header, stages 1–6, closing statement, companion link, references."
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Authentic assessment design should be anchored in meaningful tasks, criteria and contexts rather than surface realism alone.",
+      "boundary": "supported",
+      "source_ids": ["S1"]
+    },
+    {
+      "id": "C2",
+      "statement": "Evidence-Centered Design provides a principled way to connect claims about capability, observable evidence and tasks.",
+      "boundary": "supported",
+      "source_ids": ["S2"]
+    },
+    {
+      "id": "C3",
+      "statement": "Human-centred LA/AI work benefits from meaningful stakeholder involvement, attention to agency and evaluation in context.",
+      "boundary": "supported",
+      "source_ids": ["S3", "S4"]
+    },
+    {
+      "id": "C4",
+      "statement": "Recorded events require theory-informed interpretation and do not automatically demonstrate learning or transfer.",
+      "boundary": "supported",
+      "source_ids": ["S5"]
+    },
+    {
+      "id": "C5",
+      "statement": "The six-stage loop is a design synthesis for this series, not a validated universal model.",
+      "boundary": "design-decision",
+      "source_ids": ["S1", "S2", "S3", "S5"]
+    },
+    {
+      "id": "C6",
+      "statement": "This pilot has not demonstrated learning effectiveness, workplace transfer, cost savings or superiority over commercial tools.",
+      "boundary": "needs-validation",
+      "source_ids": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Designing for authentic assessment: a scoping review",
+      "authors": ["Ying Zhan", "David Boud", "Zilu Du"],
+      "year": 2025,
+      "doi": "10.1007/s10734-025-01588-9",
+      "url": "https://doi.org/10.1007/s10734-025-01588-9",
+      "type": "peer-reviewed-article",
+      "peer_reviewed": true,
+      "supports_claims": ["C1", "C5"]
+    },
+    {
+      "id": "S2",
+      "title": "Extending Principles of Evidence-Centered Design for Diverse Populations: K–12 English Learners with the Most Significant Cognitive Disabilities",
+      "authors": ["Melissa L. Gholson", "Lorraine Sova", "Maurice Cogan Hauck", "Linda Howley", "Traci Albee"],
+      "year": 2024,
+      "doi": "10.1080/10627197.2024.2354297",
+      "url": "https://doi.org/10.1080/10627197.2024.2354297",
+      "type": "peer-reviewed-article",
+      "peer_reviewed": true,
+      "supports_claims": ["C2", "C5"]
+    },
+    {
+      "id": "S3",
+      "title": "Human-centred learning analytics and AI in education: A systematic literature review",
+      "authors": ["Riordan Alfredo", "Vanessa Echeverria", "Yueqiao Jin", "Lixiang Yan", "Zachari Swiecki", "Dragan Gašević", "Roberto Martinez-Maldonado"],
+      "year": 2024,
+      "doi": "10.1016/j.caeai.2024.100215",
+      "url": "https://doi.org/10.1016/j.caeai.2024.100215",
+      "type": "peer-reviewed-article",
+      "peer_reviewed": true,
+      "supports_claims": ["C3", "C5"]
+    },
+    {
+      "id": "S4",
+      "title": "Human-Centred Learning Analytics: 2019–24",
+      "authors": ["Simon Buckingham Shum", "Roberto Martínez-Maldonado", "Yannis Dimitriadis", "Patricia Santos"],
+      "year": 2024,
+      "doi": "10.1111/bjet.13442",
+      "url": "https://doi.org/10.1111/bjet.13442",
+      "type": "peer-reviewed-article",
+      "peer_reviewed": true,
+      "supports_claims": ["C3"]
+    },
+    {
+      "id": "S5",
+      "title": "The End is the Beginning is the End: The closed-loop learning analytics framework",
+      "authors": ["Michael Sailer", "Manuel Ninaus", "Stefan E. Huber", "Elisabeth Bauer", "Samuel Greiff"],
+      "year": 2024,
+      "doi": "10.1016/j.chb.2024.108305",
+      "url": "https://doi.org/10.1016/j.chb.2024.108305",
+      "type": "peer-reviewed-article",
+      "peer_reviewed": true,
+      "supports_claims": ["C4", "C5"]
+    },
+    {
+      "id": "S6",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "authors": ["World Wide Web Consortium"],
+      "year": 2023,
+      "doi": null,
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "type": "standard",
+      "peer_reviewed": false,
+      "supports_claims": []
+    },
+    {
+      "id": "S7",
+      "title": "Universal Design for Learning Guidelines 3.0",
+      "authors": ["CAST"],
+      "year": 2024,
+      "doi": null,
+      "url": "https://udlguidelines.cast.org/",
+      "type": "official-guidance",
+      "peer_reviewed": false,
+      "supports_claims": []
+    }
+  ],
+  "skill_links": [
+    { "name": "canva-educational-series-director", "read_path": "../../skills/canva-educational-series-director/SKILL.md", "download_path": "../../skills/canva-educational-series-director/SKILL.md" },
+    { "name": "visual-evidence-research", "read_path": "../../skills/visual-evidence-research/SKILL.md", "download_path": "../../skills/visual-evidence-research/SKILL.md" },
+    { "name": "canva-accessible-visual", "read_path": "../../skills/canva-accessible-visual/SKILL.md", "download_path": "../../skills/canva-accessible-visual/SKILL.md" },
+    { "name": "interactive-learning-graphic", "read_path": "../../skills/interactive-learning-graphic/SKILL.md", "download_path": "../../skills/interactive-learning-graphic/SKILL.md" },
+    { "name": "visual-accessibility-audit", "read_path": "../../skills/visual-accessibility-audit/SKILL.md", "download_path": "../../skills/visual-accessibility-audit/SKILL.md" }
+  ],
+  "status": "reviewed",
+  "urls": {
+    "canva_public": null,
+    "companion_public": null
+  }
+}

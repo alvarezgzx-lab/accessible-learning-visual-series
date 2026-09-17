@@ -1,0 +1,61 @@
+{
+  "$schema": "../schemas/series.schema.json",
+  "id": "accessible-learning-visual-series",
+  "name": "Accessible Learning Visual Series",
+  "version": "1.0.0",
+  "identity": {
+    "voice": "profesional, cercana, rigurosa y prudente con las afirmaciones",
+    "visual_character": "editorial contemporáneo, alto contraste, estructura clara e iconografía corporativa contenida"
+  },
+  "audience": [
+    "learning experience designers",
+    "profesionales de L&D",
+    "equipos de talento y formación",
+    "PyMEs que evalúan alternativas digitales accesibles"
+  ],
+  "educational_purpose": "Explicar decisiones de diseño de aprendizaje mediante visuales verificables, accesibles y ampliables, sin confundir interacción o analítica con evidencia automática de aprendizaje.",
+  "language": {
+    "primary": "es",
+    "technical_labels": "en-short"
+  },
+  "design_system": {
+    "tokens": "../design-system/tokens.json",
+    "layout_families": [
+      "modular-infographic",
+      "flow-diagram",
+      "layered-systems-map",
+      "comparison-matrix",
+      "progressive-disclosure-carousel"
+    ]
+  },
+  "policies": {
+    "academic_source_window_years": 3,
+    "academic_sources_peer_reviewed_only": true,
+    "standards_exception": "Official standards may be older when still current.",
+    "accessibility_target": "WCAG 2.2 AA",
+    "udl_version": "3.0",
+    "plain_language": "ISO 24495-1:2023",
+    "claim_boundary_labels": ["supported", "interpretation", "design-decision", "needs-validation"]
+  },
+  "canva": {
+    "tier": "Teams",
+    "brand_kit_status": "pending-account-connection",
+    "template_status": "specifications-ready-designs-pending",
+    "public_template_url": null,
+    "public_view_url": null
+  },
+  "visuals": [
+    {
+      "id": "from-performance-to-evidence",
+      "manifest": "visuals/from-performance-to-evidence.json",
+      "status": "reviewed"
+    }
+  ],
+  "locked_decisions": [
+    { "decision": "The latest approved infographic controls the palette.", "status": "locked" },
+    { "decision": "Spanish is primary; short technical labels may be English.", "status": "locked" },
+    { "decision": "The system is approved once and then runs autonomously within the series.", "status": "locked" },
+    { "decision": "Pause only for material identity changes, insufficient evidence or accessibility failure.", "status": "locked" },
+    { "decision": "Never commit private Canva edit links.", "status": "locked" }
+  ]
+}

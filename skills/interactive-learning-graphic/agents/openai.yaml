@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive Learning Graphic"
+  short_description: "Creates accessible HTML/SVG companions with linked evidence."
+  default_prompt: "Use $interactive-learning-graphic to create an accessible companion for this approved visual manifest."

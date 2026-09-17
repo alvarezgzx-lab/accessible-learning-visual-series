@@ -1,0 +1,8 @@
+{
+  "id": "from-performance-to-evidence",
+  "manifest": "../../series/visuals/from-performance-to-evidence.json",
+  "title": "FROM PERFORMANCE TO EVIDENCE",
+  "views": ["overview", "frameworks", "technology", "evidence"],
+  "stages": ["performance", "evidence", "practice", "experience", "events", "interpretation"],
+  "status": "reviewed"
+}

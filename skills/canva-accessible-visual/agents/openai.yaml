@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canva Accessible Visual"
+  short_description: "Builds editable Canva visuals from accessible specifications."
+  default_prompt: "Use $canva-accessible-visual to specify and create this educational visual in Canva with the approved series tokens."

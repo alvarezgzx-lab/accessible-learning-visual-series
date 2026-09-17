@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Evidence Research"
+  short_description: "Maps visual claims to recent peer-reviewed evidence."
+  default_prompt: "Use $visual-evidence-research to verify these visual claims and return a claim–evidence matrix with explicit boundaries."
