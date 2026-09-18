@@ -6,7 +6,7 @@
   "language": "English visual labels with Spanish companion explanations",
   "purpose": "Show how L&D can connect expected performance, evidence, authentic practice, human-centred experience, meaningful events and iterative interpretation before choosing technology.",
   "main_message": "Technology makes the experience observable. L&D defines what the evidence means.",
-  "type": "flow",
+  "type": "carousel",
   "blocks": [
     {
       "id": "performance",
@@ -67,18 +67,20 @@
   ],
   "reading_order": ["performance", "evidence", "practice", "experience", "events", "interpretation"],
   "canva_spec": {
-    "family": "flow-diagram",
+    "family": "progressive-disclosure-carousel",
     "size_px": { "width": 1080, "height": 1350 },
-    "composition": "Header plus a 2-by-3 numbered card grid connected clockwise; synthesis band and companion invitation at the bottom.",
+    "page_count": 9,
+    "composition": "Nine-page progressive-disclosure carousel: hook; connection to Publication 0; loop overview; performance and evidence; authentic practice; human-centred experience; meaningful events; interpretation and technology; implications, limits, APA 7 references and companion CTA.",
     "visible_text": {
       "header": "FROM PERFORMANCE TO EVIDENCE",
       "subtitle": "THE HUMAN-CENTRED DIGITAL LEARNING LOOP",
       "closing": "Technology makes the experience observable. L&D defines what the evidence means.",
       "companion_cta": "Explore the frameworks, evidence and accessible text version"
     },
-    "mobile_legibility": "Use no more than 30 words per card and 26 px minimum body text.",
-    "exports": ["PNG", "PDF Digital"],
-    "accessibility_check": "Required in Canva and externally after export."
+    "mobile_legibility": "Concept pages use large display type and concise cards. The APA 7 reference page uses 19 px text and therefore requires zoom/mobile testing; the companion provides the accessible linked equivalent.",
+    "icon_policy": "Inline SVG icons built from geometric paths only; no AI-generated imagery.",
+    "exports": ["PNG pages", "PDF Digital"],
+    "accessibility_check": "Required in Canva and externally after export. Status must remain reviewed until the reference page, reading order, PDF tags and screen-reader behavior pass manual testing."
   },
   "interactive": {
     "required": true,
@@ -220,7 +222,7 @@
   ],
   "status": "reviewed",
   "urls": {
-    "canva_public": "https://www.canva.com/d/CJtD5pPHceXPyt0",
+    "canva_public": "https://www.canva.com/d/ezAEBweVLiNiThQ",
     "companion_public": "https://alvarezgzx-lab.github.io/accessible-learning-visual-series/visual.html"
   }
 }
