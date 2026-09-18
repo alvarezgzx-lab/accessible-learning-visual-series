@@ -21,7 +21,7 @@ The pilot visual is **From Performance to Evidence: The Human-Centred Digital Le
 
 ## Public links
 
-- Canva template: pending creation through the connected Canva account.
+- Canva pilot: https://www.canva.com/d/CJtD5pPHceXPyt0
 - Interactive companion: https://alvarezgzx-lab.github.io/accessible-learning-visual-series/
 
 ## Evidence and accessibility policy
